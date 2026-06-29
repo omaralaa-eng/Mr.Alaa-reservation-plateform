@@ -87,6 +87,9 @@ function App() {
       setLoading(false)
     })
   }
+  function Facebook(){
+    window.open("https://www.facebook.com/alaa.abobakr.1")
+  }
 
   return (
     <>
@@ -94,9 +97,9 @@ function App() {
         <h1>Welcome to MR Alaa reservation plateform 2026/2027</h1>
         <h3>Your way to the fullmark !</h3>
              
-    <a href="https://www.facebook.com/alaa.abobakr.1" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-facebook" id="facebook-icon"></i>
-      </a>
+    
+       
+     
 
        
 
@@ -175,7 +178,7 @@ function App() {
                   </div>
                 </>}
               </div>
-
+                       <i class="fa-brands fa-facebook" id="facebook-icon" onClick={Facebook}></i>
             </section>
           </>}
 
@@ -218,7 +221,7 @@ function App() {
                   </button>
                 </div>
               )}
-
+                 <i class="fa-brands fa-facebook" id="facebook-icon" onClick={Facebook}></i>
               <button className='back' disabled={loading} onClick={()=>{setsubmit(false);setgrade("")}}>Back</button>
             </aside>
           </>}
