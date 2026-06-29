@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root{
+  --font1: "Inter", sans-serif;
+  --color1:rgb(48, 67, 67);
+}
+@keyframes translate{
+  from{opacity: 0;translate: -30% 0;}
+  to{
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@keyframes error{
+  0%{opacity: 0;translate: 0 -50%;}
+  100%{
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+.main{
+  background: linear-gradient(180deg,#F8FBF8 10%,#f5ebd8d9 30%,#f5ebd8d9 70%,#F8FBF8 90%);
+  height: 100vh;
+  width: 100%;
+  font-family: var(--font1);
+  font-style: italic;
+  overflow: auto;
+  h1{
+    color: rgb(48, 67, 67);
+    padding: 15px 25px;
+  }
+  h3{
+     color: var(--color1);
+     padding-left: 25px;
+     padding-top: 10px;
+     font-size: 1.5rem;
+      opacity: 0;
+    animation: translate 1.5s forwards;
+  }
+}
+.sec{
+  width: 100%;
+  height: 80%;
+  overflow: auto; 
+  display: grid;
+  grid-template-columns: repeat(2,30%);
+  grid-template-rows: repeat(3,25%);
+  justify-content: center;
+  align-items: center;
+}
+.center{
+  text-align: center;
+}
+.Cgrade{
+  text-align: center;
+  opacity: 0;
+  animation: translate 1.5s 1s forwards;
+}
+.div{
+    min-height: 10%;
+    max-height: fit-content;
+    margin: 0 25px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.2s linear;
+    border: 2px solid whitesmoke;
+    position: relative;
+    top: 40px;
+    opacity: 0;
+    border: 3px solid #bda877;
+    animation: translate 1.2s .7s forwards;
+}
+.option{
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  p{
+    background-color: #EAE0C8;
+    width: 80%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s linear;
+  }
+}
+.option p:hover{
+    scale: 1.15;
+     box-shadow: 2px 2px 5px 3px #bda877 ;
+}
+.div:hover{
+  box-shadow: 3px 3px 5px 4px #bda877 ;
+}
+aside{
+  width: 100%; 
+  height: 80%;
+  overflow: auto;
+  position: relative;
+  h1,h2{
+    display: inline-block;
+    margin-top: 15px;
+     
+  }
+  h1{
+    width: 50%;
+    text-align: end;
+    animation: translate 1.5s forwards;
+  }
+  h2{
+    animation: translate 1.5s .8s forwards;
+     color: var(--color1);
+     padding-left: 25px;
+     padding-top: 10px;
+     font-size: 1.5rem;
+     opacity: 0;
+  }
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  height: 80%;
+  input{
+    width: 500px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    transition:all 0.2s ease-in-out;
+    font-size: 1.01rem;
+  }
+  button{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 15px;
+    transition: 0.2s;
+    font-size: 1.1rem;
+    border: 2px solid #bda877;
+  }
+}
+.form input:focus{
+  border: 3px solid #c6ad71;
+   box-shadow: 2px 2px 5px 3px #bda877 ;
+}
+.invalid{
+  border: 3px solid #e31616;
+   box-shadow: 2px 2px 5px 1px #e31616 ;
+}
+.form button:hover{
+ scale: 1.1;
+ background-color: #bda877;
+ color: white;
+  box-shadow: 2px 2px 5px 2px #f4f5f6 ;
+}
+.back{
+    position: absolute;
+    bottom: 55px;
+    right: 25px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: 0.2s ease-in-out;
+    font-size: 1.1rem;
+    border: 2px solid #e31616;
+}
+.back:hover{
+  background-color: #e31616;
+  color: white;
+   box-shadow: 2px 2px 5px 3px #c4381f ;
+}
+#facebook-icon{
+  position: absolute;
+  bottom: 45px;
+  left: 25px;
+  font-size: 2.5rem;
+  color: #3b5998;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+#facebook-icon:hover{
+  color: #2d4373;
+  scale: 1.3;
+}
+.error{
+  position: fixed;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e31616;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: fit-content;
+  z-index: 1000;
+  font-size: .9rem;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  animation: error .8s forwards ease-out;
+}
+#correct{
+  color: green;
+  padding: 20px;
+}
+.refresh{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 2rem;
+  color: #555;
+  font-weight: bold;
+}
+@media (min-width:300px) and (max-width:700px) {
+  .form input{
+    width: 80%;
+    height: 50px;
+  }
+  .form button{
+    width: 150px;
+  }
+  .form{
+    position: relative;
+    bottom: 50px;
+  }
+  .back{
+    position: absolute;
+    bottom: 75px;
+    right: 25px;
+    width: 80px;
+    height: 35px;
+    font-size: .9rem;
+  }
+ .sec{
+   grid-template-columns: repeat(1,90%);
+   grid-template-rows: repeat(6,20%);
+   height: 120vh;
+ }
+ aside{
+  h1,h2{
+    font-size: 25px;
+  }
+ }
+ .div{
+   animation: translate 1.5s 2s forwards;
+   top:15px;
+ }
+ .Cgrade{
+  position: relative;
+  top: 25px;
+   animation: translate 1.5s 1.5s forwards;
+ }
+ .main h1{
+  text-align: center;
+ }
+ .main h3{
+   animation: translate 1.5s 1s forwards;
+   text-align: center;
+ }
+#facebook-icon{
+  position: absolute;
+  bottom: 15px;
+  left: 5px;
+  font-size: 2rem;
+}
+.center{
+  position: relative;
+  top: 25px;
+  z-index: 1;
+}
+ .error{
+    position: fixed;
+    top:10px;
+    width: 90%;
+    padding: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .refresh{
+    font-size: 1.2rem;
+    margin-top: 40px;
+    font-weight: bold;
+  }
+}
+@media (min-width:700px) and (max-width:1000px) {
+  .sec{
+   grid-template-columns: repeat(2,50%);
+   grid-template-rows: repeat(3,23%);
+ }
+ .center{
+  position: relative;
+  top: 25px;
+  z-index: 1;
+ }
+ .main h1{
+  text-align: center;
+ }
+  .main h3{
+    animation: translate 1.5s 1s forwards;
+    text-align: center;
+  }
+  .refresh{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  .back{
+    position: absolute;
+    bottom: 45px;
+    right: 25px;
+    width: 80px;
+    height: 35px;
+    font-size: .9rem;
+  }
+}
