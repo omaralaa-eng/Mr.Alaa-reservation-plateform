@@ -259,19 +259,17 @@ aside{
   }
  }
  .div{
-   animation: translate 1.5s 2s forwards;
+   animation: translate 1.5s forwards;
    top:15px;
  }
  .Cgrade{
   position: relative;
   top: 25px;
-   animation: translate 1.5s 1.5s forwards;
  }
  .main h1{
   text-align: center;
  }
  .main h3{
-   animation: translate 1.5s 1s forwards;
    text-align: center;
  }
 #facebook-icon{
