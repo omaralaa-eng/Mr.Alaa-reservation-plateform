@@ -250,8 +250,9 @@ aside{
   }
  .sec{
    grid-template-columns: repeat(1,90%);
-   grid-template-rows: repeat(6,20%);
+   grid-template-rows: repeat(6,15%);
    height: 120vh;
+   overflow: hidden;
  }
  aside{
   h1,h2{
