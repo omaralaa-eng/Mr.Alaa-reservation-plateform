@@ -272,6 +272,9 @@ aside{
     font-size: 25px;
   }
  }
+ .disables span{
+  font-size: .6rem !important;
+ }
  .div{
    animation: translate 1.5s forwards;
    top:15px;
