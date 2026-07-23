@@ -149,7 +149,7 @@ function App() {
                   <p>Choose your group:</p>
                   <div className="option">
                     <p onClick={()=> {setsubmit(true);setgroup("Sunday")}}>Sunday (4:30 PM)</p>
-                    <p onClick={()=> {setsubmit(true);setgroup("Tuesday")}}>Tuesday (4:30 PM)</p>
+                    <p className='disables'>Tuesday (4:30 PM)<span>Completed</span></p>
                    
                   </div>
                 </>}
@@ -160,7 +160,7 @@ function App() {
                 {grade === "prep3" && <>
                   <p>Choose your group:</p>
                   <div className="option">
-                    <p onClick={()=> {setsubmit(true);setgroup("Sunday")}}>Sunday (2:30 PM)</p>
+                    <p className='disables'>Sunday (2:30 PM)<span>Completed</span></p>
                     <p onClick={()=> {setsubmit(true);setgroup("Wednesday")}}>Wednesday (2:30 PM)</p>
                      <p onClick={()=> {setsubmit(true);setgroup("Thursday")}}>Thursday (4:30 PM)</p>
                   </div>

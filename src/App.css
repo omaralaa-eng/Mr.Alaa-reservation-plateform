@@ -94,6 +94,19 @@
     transition: 0.2s linear;
   }
 }
+.disables{
+    background-color: #55555561 !important;
+    cursor: default !important;
+
+    span{
+      font-size: .8rem;
+      font-weight: 600;
+    }
+ }
+ .disables:hover{
+    scale: 1 !important;
+    box-shadow: none !important;
+ }
 .option p:hover{
     scale: 1.15;
      box-shadow: 2px 2px 5px 3px #bda877 ;
