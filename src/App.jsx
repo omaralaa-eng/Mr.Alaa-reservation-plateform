@@ -148,7 +148,7 @@ function App() {
                 {grade === "prep2" && <>
                   <p>Choose your group:</p>
                   <div className="option">
-                    <p onClick={()=> {setsubmit(true);setgroup("Sunday")}}>Sunday (4:30 PM)</p>
+                    <p className='disables'>Sunday (4:30 PM)<span>Completed</span></p>
                     <p className='disables'>Tuesday (4:30 PM)<span>Completed</span></p>
                    
                   </div>
