@@ -156,6 +156,14 @@ function App() {
                       <p className="disables">
                         Thursday (2:30 PM) <span>Completed</span>
                       </p>
+                      <p
+                        onClick={() => {
+                          setsubmit(true);
+                          setgroup("Saturday");
+                        }}
+                      >
+                        Saturday (4:30 PM)
+                      </p>
                     </div>
                   </>
                 )}
