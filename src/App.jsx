@@ -120,16 +120,21 @@ function App() {
                 className="div"
                 onClick={(e) => {
                   e.stopPropagation();
-                  setgrade("primary 5");
+                  setgrade("primary 4");
                 }}
               >
-                Primary 5
-                {grade === "primary 5" && (
+                Primary 4
+                {grade === "primary 4" && (
                   <>
                     <p>Choose your group:</p>
                     <div className="option">
-                      <p className="disables">
-                        Saturday(2:30 PM) <span>Completed</span>
+                      <p
+                        onClick={() => {
+                          setsubmit(true);
+                          setgroup("Saturday");
+                        }}
+                      >
+                        Saturday(10:30 AM)
                       </p>
                     </div>
                   </>
