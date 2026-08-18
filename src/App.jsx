@@ -238,13 +238,8 @@ function App() {
                       <p className="disables">
                         Sunday (2:30 PM)<span>Completed</span>
                       </p>
-                      <p
-                        onClick={() => {
-                          setsubmit(true);
-                          setgroup("Wednesday");
-                        }}
-                      >
-                        Wednesday (2:30 PM)
+                      <p className="disables">
+                        Wednesday (2:30 PM)<span>Completed</span>
                       </p>
                       <p
                         onClick={() => {
